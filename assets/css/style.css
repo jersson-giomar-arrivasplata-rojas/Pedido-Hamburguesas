@@ -1,0 +1,803 @@
+/*Pasar el 1vh a 16px*/
+body{
+    padding-top: 0;
+}
+video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: opacity 1s;
+}
+/*Afectan a todos inicio*/
+nav a{
+    height: 60px!important;
+}
+input[type="checkbox"] {
+    margin: 4px -15px 0 !important;
+    width: 10px !important;
+}
+hr{
+    width: 100%;
+    color: white;
+    background-color: white;
+    height: 1px;
+    border-color: white;
+    margin-top: 0 !important;
+}
+header{
+    position: absolute;
+    z-index: 2;  
+    width: 100% !important;
+    background-color: black;
+    opacity: 0.5;
+    margin-top: 15px;
+}
+
+
+/*Afectan a todos fin*/
+/*----------------------------------Home inicio ----------------------------------*/
+.pull-right{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.flotante{
+    height: 70px;
+    width: 80px;
+    position: fixed;
+    z-index: 20;
+    top: 25%;
+    border-radius: 1px;
+    padding-left: 12%;
+    background-color: transparent;
+    opacity: 0.9;
+    right: 0%;
+    display: none;
+    border-color: white;
+    border-style: solid;
+    border-right-style: none;
+    border-right-color: transparent;
+}
+.flotante label{
+    color: white;
+    font-weight: bolder;
+    margin: 0;
+    font-size: 18px;
+    margin: 0 auto;
+    padding-top: 5px;
+    border-bottom-style: solid;
+}
+.flotante .label{
+    float: right;
+    display: table;
+    left: -4vw!important;
+}
+.flotante input{
+    width: 100px;
+    float: right;
+    font-size: 24px;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    border: transparent;
+    background-color: transparent;
+    opacity: 0.9;
+    margin: 0 auto;
+    padding-bottom: 14px;
+}
+.flotante .input{
+    left: -3.5vw!important;
+}
+.main-index:before{
+    content: "";
+    display: block;
+    right: 0;
+    z-index: 0;
+    background-color: rgba(0,0,0,.6);
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    left: 0;
+  
+}
+.main-index{
+    top:20px;
+}
+header img{
+    filter: invert(530%);
+    height: 100px;
+    width: 215px;
+    z-index: 28;
+}
+.main-content{
+    padding-top: 5%;
+}
+.index-content{
+    position: relative;
+    color: white;
+    z-index: 1;
+    width: 250px;
+    margin-bottom: 16px;
+}
+.index-content .select-hamburguesa {/*igual a  #selectBox*/
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+    border-style: none;
+    padding: 0;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    width: 100%;
+    padding: 6px;
+    font-family: 'Lato', sans-serif;
+}
+ #selectBox{/*igual a  .select-hamburguesa*/
+    height: 35px;
+    width: 240px;
+    border-radius: 25% 0;
+    font-weight: 800;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 85px;
+}
+#HamburguesaFig{
+    margin: 0 auto;
+}
+.figure-index{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+.figure-index img{/*igual a .index-img-first img*/
+    border-radius: 45% 0;
+}
+.index-img-first img{/*igual a figure-index img*/
+    float: right;
+    width: 16vw;
+    height: 13.5vw;
+}
+#col-4-ul,#col-4-ul_{
+    top:5vw;
+}
+.img-logo{
+    width: 18vw !important;
+    height: 8vw!important;
+    margin-bottom: 10px;
+    filter: invert(530%);
+    position: relative;
+    margin-top: 38px;
+}
+#col-4-img img:last-child{
+    border: solid;
+    border-color: white;
+    opacity: 0.9;
+}
+img.img-papachos{
+    width: 360px !important;
+    height: 230px !important;
+    filter: invert(530%);
+    position: relative;
+    margin-top: 70px;
+}
+.index-img-second img{/*igual a img.DHamburguesa-img*/
+    float: left;
+}
+img.DHamburguesa-img{/*igual a .index-img-second img*/
+    width: 24vw!important;
+    height: 20vw!important;
+    -webkit-filter: brightness(50%);
+    filter: brightness(140%);
+    -webkit-filter: contrast(200%);
+    filter: contrast(200%);
+    filter: grayscale(100%);
+    border: solid;
+    border-color: white;
+    opacity: 0.9;
+}
+.ingrediente-first,.caracteristica-first{/*oculta y muestra*/
+    height: 310px;
+    width: 275px;
+    float:right;
+    border-radius: 5%;
+    border-style: solid;
+    color: #FEFAF6;
+}
+.caracteristica-first{
+    height: 265px;
+}
+.Ingrediente-cabecera,.caracteristica-cabecera{
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 32px;
+}
+.Ingrediente-body,.caracteristica-body{
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.span-ingrediente{
+    font-size: large;
+    font-weight: 700;
+}
+.ingrediente-body-ul,.caracteristica-body-ul{
+    text-decoration: none !important;
+    list-style: none !important;
+    list-style-type: none!important;
+    font-size: 16px !important;
+    margin-right: 20px!important;
+    margin-top: 10px !important;
+    margin-left: -38px!important;
+
+}/*li inicio*/
+.ingrediente-body-ul span,.caracteristica-body-ul span{
+    float: left;
+}
+.ingrediente-body-ul li span,.caracteristica-body-ul li span{
+    margin-left: 5%;
+    font-weight: bold;
+}
+.check-main{
+    margin-left: 250px;
+    margin-top: 4px;
+    position: absolute;
+}
+.check-main-2{
+    margin-left: 250px;
+    margin-top: 4px;
+    position: absolute;
+}
+.check-tipo{
+    float: left;
+    width: 10%;
+    margin-top: 10px;
+    cursor: pointer;
+    visibility: hidden;
+}
+.check-cantidad{
+    float: left;
+    width: 95%;
+    height: 20px;
+    border-style: none;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    padding-left: 5px;
+    border-radius: 20%;
+}/*li fin*/
+.check-cantidad_2{
+    width: 50px;
+    padding-left: 5px;
+    height: 20px;
+    border-style: none;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}/*li fin*/
+.spinner input:first-child{
+    background-color: white;
+}
+.spinner-input{
+    z-index: 111!important;
+    position: absolute!important;
+}
+.spinner-input .input-group{
+    width: 22px!important;
+    padding: 0px!important;
+ 
+}
+.spinner-input input{
+    width: 20px!important;
+    padding: 0px!important;
+    border:transparent;
+    font-weight: bold;
+}
+.spinner-input .form-control{
+    height: 22px!important;
+}
+.spinner-input i{
+    margin-top:-8px!important;
+}
+.spinner-input span {
+    margin: 20px!important;
+    padding: 0px!important;
+    width: 15px!important;
+    margin-top: -22px!important;
+    border-radius: 0px 2px 2px 0px!important;
+    border: transparent;
+    height: 22px;
+    border-radius: 0px!important;
+}
+.spinner-input a{
+    cursor: pointer!important;
+}
+textarea.form-control{
+    height: 30vh!important;
+}
+.main-index #form{/*div con id formulario*/
+    z-index: 0;
+    color: white;
+    position: relative;
+}
+.form-pedido-heading{
+    font-weight: bold;
+}
+.tipoFac{
+    font-size: large;
+}
+#selectBoxFac{  /* igual a .select-tipo*/
+    height: 30px;
+    width: 320px;
+    border-radius: 24% 0;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 22px;
+    cursor: pointer;
+}
+.select-tipo{/* igual a #selectBoxFac*/
+    color: black;;
+}
+
+#Persona-Empresa{
+    display: none;
+}
+#Empresa{
+    display: none;
+}
+.contenedor-btn-pedido{
+    padding-top: 5px;
+}
+.btn-pedido-persona{
+    margin:0!important;
+    margin-top: 5px;
+}
+
+/*----------------------------------Home fin---------------------------*/
+/*----------------------En comun Home-Login inicio---------------------*/
+.signin-container button,.btn-pedido-persona{
+    width: 100%;
+    text-align: center;
+    padding: 18px 10px;
+    border: 2px solid #fff;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 31px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 7px;   
+    background: transparent;
+}
+.signin-container button:hover ,.btn-pedido-persona:hover{
+    background-color: #e4007d;
+    border-color: #e4007d;
+    font-family: 'Lato', sans-serif;
+}
+
+   
+/*----------------------------Fin En comun Home-Login inicio -------------------------------*/
+@media only screen and (max-width:  1500px ) {
+.main-index #form {
+    margin-top: 4.5vw;
+}
+}
+@media only screen and (max-width:  1300px ) {
+.index-img-first img {
+    float: left;
+    width: 15vw;
+    height: 13.5vw;
+}
+}
+/*de arriba hacia abajo*/
+@media only screen and (max-width:  1200px ) {/*inicio 1200px media query*/
+.main-index:before {
+    height: 152% !important;
+}
+img.DHamburguesa-img{/*igual a .index-img-second img*/
+    width: 350px!important;
+    height: 280px!important;
+}
+.figure-index img {
+    width: 15vw;
+    height: 160px;
+    float: left;
+}
+.ingrediente-first{/*oculta y muestra*/
+    height: 310px;
+    width: 235px;
+}
+.caracteristica-first{
+    height: 310px;
+    width: 210px;
+}
+#col-4-img{
+    padding-left: 5%;
+    padding-right: 10%;
+}
+#form{
+    top:40px;
+}
+.main-index #form{
+    margin-top:0px;
+}
+.flotante{
+    padding-left: 8%;
+}
+.flotante label {
+    font-size: 14px;
+}
+.flotante .label {
+    left: -1vw!important;
+}
+.flotante input {
+    width: 70px;
+    font-size: 20px;
+}
+.flotante .input {
+    left: -1.5vw!important;
+}
+.check-main {
+    margin-left: 210px;
+}
+.check-main-2 {
+    margin-left: 185px;
+}
+hr {
+    margin-bottom: 14px;
+}
+}/*fin 1200px media query*/
+@media only screen and (max-width:  940px) {
+.flotante{
+   
+}
+.flotante label {
+    font-size: 12px!important;
+}
+.flotante .label {
+   
+}
+.flotante input {
+   
+    font-size: 18px!important;
+}
+.flotante .input {
+    left: -0.5vw!important;
+}
+} 
+@media only screen and (max-width:  900px) {
+.flotante .input {
+    left: -0vw!important;
+}
+.flotante label {
+
+}
+.flotante .label {
+   
+}
+.flotante input {
+   
+ 
+}
+.flotante .input {
+    left: -0vw!important;
+}
+} 
+@media only screen and (max-width:  767px ) {/*inicio 767px media query*/
+.flotante{
+   
+}
+.flotante label {
+
+}
+.flotante .label {
+   
+}
+.flotante input {
+   width: 60px !important;
+ 
+}
+.flotante .input {
+    left: 0!important;
+}
+header{
+    background-color: black;
+    width: 100%;
+    opacity: 0.5;
+    height: 104px;
+}
+header img{
+    height: 105px!important;
+}
+.main-index:before {
+    height: 206% !important;
+}
+/*
+.main-index:before {
+    height: 205% !important;
+    background-image: url("../images/papachosindex/hamburguesa.jpg");
+}*/
+.main-content{
+    padding-top: 20% !important;
+}
+#selectBox{      
+    margin-top: 0px!important;
+}
+.index-img-first img{
+    float: none !important;
+    margin-top: 0 !important;
+}
+img.DHamburguesa-img{/*igual a .index-img-second img*/
+    width: 48vw!important;
+    height: 40vw!important;
+}
+.index-img-second img{
+    float: none!important;
+}
+.ingrediente-first,.caracteristica-first{
+    height: 310px;
+    width: 250px;
+    display: block!important;
+    margin: 0 auto!important;
+    margin-left: 20%!important;
+    margin-right: 26%!important;
+}   
+#col-4-img{
+    margin-top: 60px !important;
+}
+.img-logo{
+    width: 25vw!important;
+    height: 12vw!important;
+}
+.check-cantidad{
+    width: 30%;
+}
+#form{
+    top:30px;
+}
+.check-main {
+    margin-left: 225px;
+}
+.check-main-2 {
+    margin-left: 225px;
+}
+.flotante .input {
+    left: 0vw!important;
+}
+.figure-index img {
+    height: 16vw;
+    border-radius: 45% 0;
+}
+}/*fin 767px media query*/
+@media only screen and (max-width:  700px ) {/*inicio 700px media query*/
+.flotante{
+   
+}
+.flotante label {
+
+}
+.flotante .label {
+   
+}
+.flotante input {
+    width: 56px !important;
+ 
+}
+.flotante .input {
+    left: 0!important;
+}
+header{
+    background-color: black;
+    width: 100%;
+    opacity: 0.5;
+    height: 104px;
+}
+header img{
+    height: 105px!important;
+}  
+.main-content{
+    padding-top: 30% !important;
+}  
+#selectBox{ 
+    margin-top: 0px!important;
+}
+.index-img-first img{
+  
+}
+.img-logo{
+    width: 30vw!important;
+    height: 14vw!important;
+}
+img.DHamburguesa-img {
+    width: 58vw!important;
+    height: 50vw!important;
+}
+.index-img-second img{
+    float: none!important;
+}
+
+}/*fin 700px media query*/
+@media only screen and (max-width:  600px ) {/*inicio 700px media query*/
+.flotante{
+   
+}
+.flotante label {
+
+}
+.flotante .label {
+   
+}
+.flotante input {
+   
+ 
+}
+
+}
+@media screen and (max-width: 480px) {/*inicio 480px media query*/
+.flotante{
+    height: 60px;
+    width: 60px;
+}
+.flotante label {
+    font-size: 10px!important;
+}
+.flotante .label {
+   
+}
+.flotante input {
+    font-size: 16px!important;
+    padding-left: 12px;
+}
+.flotante .input {
+    
+}
+header img{
+    height: 105px!important;
+}
+header{
+    background-color: black;
+    width: 100%;
+    opacity: 0.5;
+    height: 104px;
+}
+.main-index:before {
+    height: 222% !important;
+}
+.main-content{
+    padding-top: 35% !important;
+}
+#selectBox{ 
+    margin-top: 64px!important;
+    margin-top: 0px;
+    font-size: 12px;
+}
+#col-4-img{
+    margin-top: 40px !important;
+    margin-bottom: 15px !important;
+}
+.img-logo{
+    height: 20vw !important;
+    width: 60vw!important;
+}
+.index-img-second img{
+    float: none !important;
+    height: 45vw!important;
+    width: 50vw!important;
+}
+.index-img-first img{
+    height: 35vw;
+}
+.index-img-first img:last-child{
+    height: 35vw;
+    width: 38vw;
+}
+img.img-papachos{
+    width: 74vw!important;
+    height: 35vw!important;
+}
+.ingrediente-first,.caracteristica-first{
+    display: block!important;
+    margin: 0 auto!important;
+    height: 300px;
+    width: 224px;
+}
+.ingrediente-body-ul{
+    font-size: 15px !important;
+}
+.ingrediente-first,.caracteristica-first{
+    margin-left: 20%!important;
+    margin-right: 16%!important;
+}  
+.check-main {
+    margin-left: 158px;
+    margin-top: -18px;
+    position: absolute;
+}
+input[type="checkbox"] {
+    margin: 4px -15px 0 !important;
+    width: 10px !important;
+}
+.check-cantidad {
+    width: 60%;
+    height: 20px;
+    border-style: none;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+
+#selectBoxFac {
+    height: 30px;
+    font-size: 12px;
+    width: 220px;
+    margin-left: 0px;
+}    
+.btn-pedido-persona{
+    font-size: 25px;
+}
+.check-main {
+    margin-left: 160px;
+}
+.check-main-2 {
+    margin-left: 245px;
+}
+.check-main .spinner{
+    margin-left: 40px!important;
+}
+.check-main-2 .spinner{
+    margin-left: -50px!important;
+}
+   
+}/*fin 480px media query*/
+
+@media screen and (max-width: 390px) {/*inicio 480px media query*/
+.flotante{
+    height: 60px;
+    width: 60px;
+}
+.flotante .input {
+    width: 45px;
+    left: 0.5vw!important;
+}
+}
+
+@media screen and (max-width: 410px) {/*inicio 480px media query*/
+.flotante{
+    height: 60px;
+    width: 60px;
+}
+.flotante .input {
+    width: 45px;
+ 
+}
+.flotante input {
+    font-size: 16px!important;
+    padding-left: 0!important;
+}
+}
+.swal-modal div:first-child{
+    color: #f27474;
+}
+.swal-modal div:last-child{
+  background-color: #FEFAE3;
+  padding: 17px;
+  border: 1px solid #F0E1A1;
+  display: block;
+  margin: 22px;
+  text-align: center;
+  color: #61534e;
+}
